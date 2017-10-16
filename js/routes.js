@@ -2,7 +2,7 @@ angular
 	.module("app")
 	.config(["$stateProvider", "$urlRouterProvider", "$ocLazyLoadProvider", "$breadcrumbProvider", function($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, $breadcrumbProvider) {
 
-		$urlRouterProvider.otherwise("/dashboard");
+		$urlRouterProvider.otherwise("/landing");
 
 		$ocLazyLoadProvider.config({
 			// Set to true if you want to see what and when is dynamically loaded
@@ -30,11 +30,11 @@ angular
 						return $ocLazyLoad.load([{
 							serie: true,
 							name: "Font Awesome",
-							files: ["vendor/font-awesome/css/font-awesome.min.css"]
+							files: ["node_modules/font-awesome/css/font-awesome.min.css"]
 						},{
 							serie: true,
 							name: "Simple Line Icons",
-							files: ["vendor/simple-line-icons/css/simple-line-icons.css"]
+							files: ["node_modules/simple-line-icons/css/simple-line-icons.css"]
 						}]);
 					}],
 					loadPlugin: ["$ocLazyLoad", function ($ocLazyLoad) {
@@ -43,8 +43,8 @@ angular
 							serie: true,
 							name: "chart.js",
 							files: [
-								"vendor/chart.js/dist/Chart.min.js",
-								"vendor/angular-chart.js/dist/angular-chart.min.js"
+								"node_modules/chart.js/dist/Chart.min.js",
+								"node_modules/angular-chart.js/dist/angular-chart.min.js"
 							]
 						}]);
 					}],
@@ -67,8 +67,8 @@ angular
 								serie: true,
 								name: "chart.js",
 								files: [
-									"vendor/chart.js/dist/Chart.min.js",
-									"vendor/angular-chart.js/dist/angular-chart.min.js"
+									"node_modules/chart.js/dist/Chart.min.js",
+									"node_modules/angular-chart.js/dist/angular-chart.min.js"
 								]
 							},
 						]);
@@ -90,11 +90,11 @@ angular
 						return $ocLazyLoad.load([{
 							serie: true,
 							name: "Font Awesome",
-							files: ["vendor/font-awesome/css/font-awesome.min.css"]
+							files: ["node_modules/font-awesome/css/font-awesome.min.css"]
 						},{
 							serie: true,
 							name: "Simple Line Icons",
-							files: ["vendor/simple-line-icons/css/simple-line-icons.css"]
+							files: ["node_modules/simple-line-icons/css/simple-line-icons.css"]
 						}]);
 					}],
 				}
