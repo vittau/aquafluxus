@@ -12,6 +12,7 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400");
 @media print {
   *,
   *::before,
@@ -326,8 +327,8 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 500;
+  font-family: "Montserrat";
+  font-weight: 200;
   line-height: 1.1;
   color: inherit; }
 
@@ -3561,11 +3562,17 @@ button.close {
 a.bg-primary:focus, a.bg-primary:hover {
   background-color: #1985ac !important; }
 
+#login-page .bg-primary {
+  background-color: rgba(32, 168, 216, 0.5) !important; }
+
 .bg-secondary {
   background-color: #a4b7c1 !important; }
 
 a.bg-secondary:focus, a.bg-secondary:hover {
   background-color: #869fac !important; }
+
+#login-page .bg-secondary {
+  background-color: rgba(164, 183, 193, 0.5) !important; }
 
 .bg-success {
   background-color: #4dbd74 !important; }
@@ -3573,11 +3580,17 @@ a.bg-secondary:focus, a.bg-secondary:hover {
 a.bg-success:focus, a.bg-success:hover {
   background-color: #3a9d5d !important; }
 
+#login-page .bg-success {
+  background-color: rgba(77, 189, 116, 0.5) !important; }
+
 .bg-info {
   background-color: #63c2de !important; }
 
 a.bg-info:focus, a.bg-info:hover {
   background-color: #39b2d5 !important; }
+
+#login-page .bg-info {
+  background-color: rgba(99, 194, 222, 0.5) !important; }
 
 .bg-warning {
   background-color: #ffc107 !important; }
@@ -3585,11 +3598,17 @@ a.bg-info:focus, a.bg-info:hover {
 a.bg-warning:focus, a.bg-warning:hover {
   background-color: #d39e00 !important; }
 
+#login-page .bg-warning {
+  background-color: rgba(255, 193, 7, 0.5) !important; }
+
 .bg-danger {
   background-color: #f86c6b !important; }
 
 a.bg-danger:focus, a.bg-danger:hover {
   background-color: #f63c3a !important; }
+
+#login-page .bg-danger {
+  background-color: rgba(248, 108, 107, 0.5) !important; }
 
 .bg-light {
   background-color: #f0f3f5 !important; }
@@ -3597,11 +3616,17 @@ a.bg-danger:focus, a.bg-danger:hover {
 a.bg-light:focus, a.bg-light:hover {
   background-color: #d1dbe1 !important; }
 
+#login-page .bg-light {
+  background-color: rgba(240, 243, 245, 0.5) !important; }
+
 .bg-dark {
   background-color: #29363d !important; }
 
 a.bg-dark:focus, a.bg-dark:hover {
   background-color: #151b1f !important; }
+
+#login-page .bg-dark {
+  background-color: rgba(41, 54, 61, 0.5) !important; }
 
 .bg-white {
   background-color: #fff !important; }
@@ -8818,19 +8843,6 @@ hr.transparent {
   width: 20px;
   height: 20px; }
 
-/*!
- * Start Bootstrap - Landing Page (http://startbootstrap.com/template-overviews/landing-page)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
- */
-body, html {
-  width: 100%;
-  height: 100%; }
-
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700; }
-
 .intro-header {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -8952,3 +8964,21 @@ footer {
 
 p.copyright {
   margin: 15px 0 0; }
+
+#login-page {
+  font-family: "Montserrat";
+  color: #fff;
+  background: url("/img/banner-1-blur.jpg") no-repeat center center fixed;
+  background-size: cover; }
+  #login-page h1, #login-page h2 {
+    font-weight: 200; }
+  #login-page .card-group {
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); }
+  #login-page .card {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+    margin-bottom: 0; }
+  #login-page .btn-link {
+    color: #fff; }
